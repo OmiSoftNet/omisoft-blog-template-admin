@@ -1,0 +1,31 @@
+stages:
+  - deploy
+
+cache:
+  paths:
+    - node_modules/
+
+deploy:
+  stage: deploy
+  image: node:latest
+  only:
+    - release
+  variables:
+    IP: '127.124.187.102'
+    USER: 'root'
+    TEMP_PATH: '/var/www/omisoftblog/ci/'
+    ROOT_PATH: '/var/www/omisoftblog/'
+    BUILD_DIR: 'build/'
+  script:
+    - yarn
+    - CI=false yarn prod
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - echo "StrictHostKeyChecking no" >> /etc/ssh/ssh_config
+    - ssh $USER@$IP "mkdir -p $TEMP_PATH"
+    - scp -r $BUILD_DIR $USER@$IP:$TEMP_PATH
+    - ssh $USER@$IP "rm -rf $ROOT_PATH$BUILD_DIR"
+    - ssh $USER@$IP "mv $TEMP_PATH$BUILD_DIR $ROOT_PATH"
