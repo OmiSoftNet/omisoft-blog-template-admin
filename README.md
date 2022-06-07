@@ -14,6 +14,14 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Project Structure
+
+This blog consists of three different parts:
+
+- [Front End side](https://github.com/OmiSoftNet/omisoft-blog-template-front)
+- [Back End side](https://github.com/OmiSoftNet/omisoft-blog-template-back)
+- [Admin Panel](https://github.com/OmiSoftNet/omisoft-blog-template-admin)
+
 ## Preview
 
 <img src="./images/screen.png" alt="Preview" width="800">
