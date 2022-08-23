@@ -1,12 +1,11 @@
 <img src="./images/cover.png" alt="OMISOFT BLOG EXAMPLE - ADMIN PANEL" width="800">
 
+![node.js](https://img.shields.io/static/v1?label=node.js&message=18.2.0&color=tomato)
 ![react.js](https://img.shields.io/static/v1?label=react.js&message=17.0.2&color=<COLOR>)
-![npm](https://img.shields.io/static/v1?label=npm&message=8.9.0&color=orange)
+![npm](https://img.shields.io/static/v1?label=npm&message=8.9.0&color=violet)
 ![typescript](https://img.shields.io/static/v1?label=typescript.js&message=4.6.3&color=blue)
 
 # OMISOFT BLOG EXAMPLE - ADMIN PANEL
-
----
 
 Here you can find a simple boilerplate for a Blog based on React.js & Next.js. We use this code in the project [SudokuPro.app](https://sudokupro.app)
 
@@ -21,8 +20,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Project Structure
 
----
-
 This blog consists of three different parts:
 
 - [Front End side](https://github.com/OmiSoftNet/omisoft-blog-template-front)
@@ -35,8 +32,6 @@ This blog consists of three different parts:
 
 ## Created by
 
----
-
 [OmiSoft](https://omisoft.net/?utm_source=github&utm_medium=social)
 
 [![OmiSoft.net Facebook page][1.1]][1]
@@ -48,8 +43,6 @@ This blog consists of three different parts:
 [2.1]: http://i.imgur.com/wWzX9uB.png "OmiSoft.net Twitter page"
 
 ## License
-
----
 
 OMISOFT BLOG EXAMPLE is released under the MIT license.  
 See the [LICENSE](./LICENSE.md) for details.
