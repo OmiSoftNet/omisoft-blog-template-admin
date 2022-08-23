@@ -1,6 +1,6 @@
 <img src="./images/cover.png" alt="OMISOFT BLOG EXAMPLE - ADMIN PANEL" width="800">
 
-![node.js](https://img.shields.io/static/v1?label=node.js&message=18.2.0&color=tomato)
+![node.js](https://img.shields.io/static/v1?label=node.js&message=>=16.0.0&color=tomato)
 ![react.js](https://img.shields.io/static/v1?label=react.js&message=17.0.2&color=<COLOR>)
 ![npm](https://img.shields.io/static/v1?label=npm&message=8.9.0&color=violet)
 ![typescript](https://img.shields.io/static/v1?label=typescript.js&message=4.6.3&color=blue)
